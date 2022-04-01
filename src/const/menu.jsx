@@ -13,7 +13,7 @@ const menuOptions = [
   },
   {
     name: "Pago",
-    path: "",
+    path: "/pago",
   },
   {
     name: "Regístrate",
@@ -21,7 +21,7 @@ const menuOptions = [
   },
   {
     name: "Iniciar sesión",
-    path: "",
+    path: "/login",
   },
 ];
 
