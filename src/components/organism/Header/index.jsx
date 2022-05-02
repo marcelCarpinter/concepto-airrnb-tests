@@ -9,7 +9,7 @@ import MenuList from "components/molecule/MenuList";
 //Variables
 import { menuOptions } from "const/menu";
 
-const Header = styled.div`
+export const Header = styled.div`
   top: 0%;
   display: flex;
   width: 85%;
@@ -26,9 +26,9 @@ export default function index({ options = menuOptions }) {
     return <MenuItem key={index} name={item.name} path={item.path} />;
   });
   return (
-      <>
+      <Header>
           <Logo />
           <MenuList>{MenuItems}</MenuList>
-      </>
+      </Header>
   );
 }

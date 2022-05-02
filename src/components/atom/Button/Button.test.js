@@ -8,6 +8,7 @@ https://enzymejs.github.io/enzyme/docs/api/ReactWrapper/exists.html
 https://www.ordermygear.com/greenfield/testing-ui-components-part-1-atoms-molecules/
 https://assist-software.net/blog/how-write-tests-using-jest-and-enzyme-react-js-testing-utilities-used-facebook-and-airbnb
 https://dev.to/duxtech/workspace-recomendado-para-testing-en-react-17-jest-enzyme-4ih9
+https://www.toptal.com/react/tdd-react-unit-testing-enzyme-jest
  */
 describe("The components are rendered", () => {
     it("renders Button component without crashing", () => {

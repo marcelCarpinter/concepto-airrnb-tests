@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 import firebase from "firebase/compat/app";
 import "firebase/compat/firestore";
-import "firebase/compat/auth";
 import "firebase/compat/analytics";
+import { getAuth } from "firebase/auth";
 
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
@@ -19,7 +19,7 @@ firebase.initializeApp(firebaseConfig);
 const uid = 10,
   photoURL = "https://api.adorable.io/avatars/23/abott@adorable.png";
 
-const auth = firebase.auth();
+const auth = getAuth();
 const firestore = firebase.firestore();
 const analytics = firebase.analytics();
 
