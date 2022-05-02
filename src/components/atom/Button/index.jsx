@@ -18,6 +18,7 @@ Button.defaultProps = buttonDefaults;
 export default Button;
 
 const SearchButton = ({ theme, name, customcolor }) => {
+  console.log(name);
   return (
     <ButtonBase
       theme={theme}

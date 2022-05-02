@@ -19,7 +19,6 @@ const Header = styled.div`
   background: #ffffff;
   border-radius: 30px;
   margin-top: 10px;
-  margin-top: 10;
 `;
 
 export default function index({ options = menuOptions }) {
@@ -27,9 +26,9 @@ export default function index({ options = menuOptions }) {
     return <MenuItem key={index} name={item.name} path={item.path} />;
   });
   return (
-    <Header>
-      <Logo />
-      <MenuList>{MenuItems}</MenuList>
-    </Header>
+      <>
+          <Logo />
+          <MenuList>{MenuItems}</MenuList>
+      </>
   );
 }
